@@ -12,7 +12,7 @@ namespace Model
 
 		public Int64 IdLeitor { get; set; }
 
-		public DateTime Data { get; set; }
+		public DateTime DataDevolucao { get; set; }
 
 		public DateTime Hora { get; set; }
 

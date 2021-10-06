@@ -37,6 +37,11 @@ namespace View
 			this.columnTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.columnAutor = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.columnStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.btnBuscar = new System.Windows.Forms.Button();
+			this.label2 = new System.Windows.Forms.Label();
+			this.txbTitulo = new System.Windows.Forms.TextBox();
+			this.btnDeletar = new System.Windows.Forms.Button();
+			this.btnAlterar = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dgvListaLivros)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -44,7 +49,7 @@ namespace View
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Bahnschrift Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(43, 9);
+			this.label1.Location = new System.Drawing.Point(43, 29);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(48, 21);
 			this.label1.TabIndex = 14;
@@ -52,7 +57,7 @@ namespace View
 			// 
 			// mtxbISBN
 			// 
-			this.mtxbISBN.Location = new System.Drawing.Point(97, 9);
+			this.mtxbISBN.Location = new System.Drawing.Point(97, 28);
 			this.mtxbISBN.Mask = "000-0-00-000000-0";
 			this.mtxbISBN.Name = "mtxbISBN";
 			this.mtxbISBN.Size = new System.Drawing.Size(128, 22);
@@ -69,7 +74,7 @@ namespace View
             this.columnTitulo,
             this.columnAutor,
             this.columnStatus});
-			this.dgvListaLivros.Location = new System.Drawing.Point(47, 87);
+			this.dgvListaLivros.Location = new System.Drawing.Point(47, 134);
 			this.dgvListaLivros.Name = "dgvListaLivros";
 			this.dgvListaLivros.ReadOnly = true;
 			this.dgvListaLivros.RowHeadersVisible = false;
@@ -118,11 +123,60 @@ namespace View
 			this.columnStatus.ReadOnly = true;
 			this.columnStatus.Width = 125;
 			// 
+			// btnBuscar
+			// 
+			this.btnBuscar.Location = new System.Drawing.Point(231, 105);
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+			this.btnBuscar.TabIndex = 23;
+			this.btnBuscar.Text = "Buscar";
+			this.btnBuscar.UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Font = new System.Drawing.Font("Bahnschrift Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label2.Location = new System.Drawing.Point(40, 63);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(51, 21);
+			this.label2.TabIndex = 24;
+			this.label2.Text = "Título";
+			// 
+			// txbTitulo
+			// 
+			this.txbTitulo.Location = new System.Drawing.Point(97, 64);
+			this.txbTitulo.Name = "txbTitulo";
+			this.txbTitulo.Size = new System.Drawing.Size(209, 22);
+			this.txbTitulo.TabIndex = 25;
+			// 
+			// btnDeletar
+			// 
+			this.btnDeletar.Location = new System.Drawing.Point(119, 475);
+			this.btnDeletar.Name = "btnDeletar";
+			this.btnDeletar.Size = new System.Drawing.Size(79, 23);
+			this.btnDeletar.TabIndex = 32;
+			this.btnDeletar.Text = "Deletar";
+			this.btnDeletar.UseVisualStyleBackColor = true;
+			// 
+			// btnAlterar
+			// 
+			this.btnAlterar.Location = new System.Drawing.Point(47, 475);
+			this.btnAlterar.Name = "btnAlterar";
+			this.btnAlterar.Size = new System.Drawing.Size(66, 23);
+			this.btnAlterar.TabIndex = 31;
+			this.btnAlterar.Text = "Alterar";
+			this.btnAlterar.UseVisualStyleBackColor = true;
+			// 
 			// FrmListaLivros
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(761, 626);
+			this.ClientSize = new System.Drawing.Size(761, 534);
+			this.Controls.Add(this.btnDeletar);
+			this.Controls.Add(this.btnAlterar);
+			this.Controls.Add(this.txbTitulo);
+			this.Controls.Add(this.label2);
+			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.dgvListaLivros);
 			this.Controls.Add(this.mtxbISBN);
 			this.Controls.Add(this.label1);
@@ -147,5 +201,10 @@ namespace View
 		private System.Windows.Forms.DataGridViewTextBoxColumn columnTitulo;
 		private System.Windows.Forms.DataGridViewTextBoxColumn columnAutor;
 		private System.Windows.Forms.DataGridViewTextBoxColumn columnStatus;
+		private System.Windows.Forms.Button btnBuscar;
+		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.TextBox txbTitulo;
+		private System.Windows.Forms.Button btnDeletar;
+		private System.Windows.Forms.Button btnAlterar;
 	}
 }
